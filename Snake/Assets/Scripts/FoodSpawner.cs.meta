@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 84aebbcdcded7bf42bbc32c50dfb0c3a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - groundTilemap: {instanceID: 0}
+  - obstacleTilemap: {instanceID: 0}
+  - foodPrefab: {fileID: 4467516170642154691, guid: de9074316bdb7d043b93fd9e0acff602, type: 3}
+  - foodParent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

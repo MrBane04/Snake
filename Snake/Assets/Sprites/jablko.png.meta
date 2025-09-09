@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 18c925350829e584a86ec43d2b6e78ed
+guid: 7f545a075b97fa245b53dd1e74cf3ca3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7832214784768987486
-    second: apple_0
+      213: -8158660110152288018
+    second: jablko_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: apple_0
+      name: jablko_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 571
-        height: 540
+        x: 4
+        y: 2
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ae284d66226e4390800000000000000
-      internalID: -7832214784768987486
+      spriteID: ee839333bdd96ce80800000000000000
+      internalID: -8158660110152288018
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      apple_0: -7832214784768987486
+      jablko_0: -8158660110152288018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
