@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 77c4c6aedcc1acd4ab41de79fe509c15
+guid: d342a3c91fbd53c438d9336e3fb2cb2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7660295746888667449
-    second: options_bttn_0
+      213: 8897380168114241531
+    second: options_hover_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: options_bttn_0
+      name: options_hover_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9311cb35566de4a60800000000000000
-      internalID: 7660295746888667449
+      spriteID: bfffd006f18d97b70800000000000000
+      internalID: 8897380168114241531
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      options_bttn_0: 7660295746888667449
+      options_hover_0: 8897380168114241531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

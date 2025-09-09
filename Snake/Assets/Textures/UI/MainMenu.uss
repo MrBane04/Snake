@@ -1,0 +1,44 @@
+:root {
+}
+
+.play-bttn {
+    background-image: url("project://database/Assets/Textures/UI/start_bttn.png?fileID=2800000&guid=f328364d2eeed084d99e3b2ce2b07a86&type=3#start_bttn");
+    width: 512px;
+    height: 128px;
+}
+
+.settings-bttn {
+    width: 512px;
+    height: 128px;
+    background-image: url("project://database/Assets/Textures/UI/options_bttn.png?fileID=2800000&guid=06e6e12d5c5a18841a9e83ce7b7d8838&type=3#options_bttn");
+}
+
+.exit-bttn {
+    width: 512px;
+    height: 128px;
+    background-image: url("project://database/Assets/Textures/UI/exit_bttn.png?fileID=2800000&guid=60f668ea112ad9e4f815f19dadf50458&type=3#exit_bttn");
+}
+
+.play-bttn:hover {
+    background-image: url("project://database/Assets/Textures/UI/start_hover.png?fileID=2800000&guid=269e0008eb6c2844182aed5bd3d28423&type=3#start_hover");
+}
+
+.play-bttn:active {
+    background-image: url("project://database/Assets/Textures/UI/start_clicked.png?fileID=2800000&guid=9cf118e2c6fec45439bfb7b88e926614&type=3#start_clicked");
+}
+
+.settings-bttn:hover {
+    background-image: url("project://database/Assets/Textures/UI/options_hover.png?fileID=2800000&guid=d342a3c91fbd53c438d9336e3fb2cb2b&type=3#options_hover");
+}
+
+.settings-bttn:active {
+    background-image: url("project://database/Assets/Textures/UI/options_clicked.png?fileID=2800000&guid=ef3df872473c42b44985ebb295cd40a9&type=3#options_clicked");
+}
+
+.exit-bttn:hover {
+    background-image: url("project://database/Assets/Textures/UI/exit_hover.png?fileID=2800000&guid=52f1e5531fc4f7c49b99ad7ecb125912&type=3#exit_hover");
+}
+
+.exit-bttn:active {
+    background-image: url("project://database/Assets/Textures/UI/exit_clicked.png?fileID=2800000&guid=3da48ab8aad85d5458b9a08140c556cf&type=3#exit_clicked");
+}
