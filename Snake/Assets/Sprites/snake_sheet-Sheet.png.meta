@@ -45,7 +45,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -138,9 +138,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 145
-        width: 23
-        height: 23
+        y: 144
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,9 +159,9 @@ TextureImporter:
       name: snake_sheet-Sheet_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 144
-        width: 65
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,9 +181,9 @@ TextureImporter:
       name: snake_sheet-Sheet_2
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 120
-        width: 65
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: snake_sheet-Sheet_3
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 96
-        width: 65
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,9 +225,9 @@ TextureImporter:
       name: snake_sheet-Sheet_4
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 72
-        width: 67
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: snake_sheet-Sheet_5
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 48
-        width: 68
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,9 +269,9 @@ TextureImporter:
       name: snake_sheet-Sheet_6
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 24
-        width: 68
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,9 +291,9 @@ TextureImporter:
       name: snake_sheet-Sheet_7
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 0
-        width: 67
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -309,11 +309,319 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d9f21e5abd7804a967956902930c3b
+      internalID: -625151942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41712a16f45090e459bdfe8c9d3ac26c
+      internalID: 1279438283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33b1789f7751d041b31586e1837d96e
+      internalID: -1620275291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a2208a396e8d244a8ebf9d5ec07d3f
+      internalID: -934790858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a56422909efd54db1d4cd2c6883992
+      internalID: 1726326720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04c8acf724e46d478ec5f59fd1bd0d4
+      internalID: 1433448226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da98ae94afb396409e05204b3b65da0
+      internalID: 365110602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f116f5d0f47d24b82099330bd7e1eb
+      internalID: -304547518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9271df0be2e1f4a4ea793bfd05cae3a9
+      internalID: 1853344717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11a7792e59944448b64da921077400d
+      internalID: -981472026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14777e0d379cf0d458fd8aa3790c7286
+      internalID: -310590000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e2870cb578878478c262b9ee183644
+      internalID: -428178343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6067031fcf557264591b6f03150cc5f3
+      internalID: -92243518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_sheet-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b3759dcebb56d4083387528e91291c
+      internalID: 111986007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8cefe6dd38633d47ac256cc018efbda
     internalID: 0
     vertices: []
     indices: 
@@ -321,16 +629,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       snake_sheet-Sheet_0: -6549944032601868111
       snake_sheet-Sheet_1: -6198043593247772366
+      snake_sheet-Sheet_10: -1620275291
+      snake_sheet-Sheet_11: -934790858
+      snake_sheet-Sheet_12: 1726326720
+      snake_sheet-Sheet_13: 1433448226
+      snake_sheet-Sheet_14: 365110602
+      snake_sheet-Sheet_15: -304547518
+      snake_sheet-Sheet_16: 1853344717
+      snake_sheet-Sheet_17: -981472026
+      snake_sheet-Sheet_18: -310590000
+      snake_sheet-Sheet_19: -428178343
       snake_sheet-Sheet_2: 3200378033301923025
+      snake_sheet-Sheet_20: -92243518
+      snake_sheet-Sheet_21: 111986007
       snake_sheet-Sheet_3: -7728515414991619394
       snake_sheet-Sheet_4: -4653175863871525186
       snake_sheet-Sheet_5: -956110951862808228
       snake_sheet-Sheet_6: -3517462915839642964
       snake_sheet-Sheet_7: -2247557538859217671
+      snake_sheet-Sheet_8: -625151942
+      snake_sheet-Sheet_9: 1279438283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
