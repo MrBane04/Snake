@@ -6,8 +6,12 @@ using System.Collections;
 public class HeadMovement : MonoBehaviour
 {
     [SerializeField] private float stepLength = 1f;
-    [SerializeField] public float refreshTime = 0.15f;
+    [SerializeField] public float refreshTime = 0.3f;
     [SerializeField] private LayerMask groundMask;
+    public GameObject foodPrefab;
+    public GameObject bodySegmentPrefab;
+    private bool tailFreezer=false;
+    public GameObject tail;
 
     public SpriteRenderer headRenderer;
     public Sprite[] headFrames;
@@ -103,7 +107,7 @@ public class HeadMovement : MonoBehaviour
             prevPos = segOld;
         }
 
-        if (tailMovement)
+        if (tailMovement) // && tailFreezer==false
         {
             Transform tail = tailMovement.transform;
             tail.position = prevPos;
@@ -111,6 +115,8 @@ public class HeadMovement : MonoBehaviour
             tailMovement.SetDirection(tailDir);
         }
 
+        if(tailFreezer==false)bodySegments[bodySegments.Count-1].GetComponent<SpriteRenderer>().enabled = true;
+        tailFreezer=false;
         rb.MovePosition(headNew);
         AnimateHeadLoop();
     }
@@ -154,6 +160,13 @@ public class HeadMovement : MonoBehaviour
             StartCoroutine(HitEffect());
         }
 
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Food"))
+        {
+            Destroy(collision.gameObject);
+            SpawnNewFood();
+            AddBodySegment();
+        }
+
         if (collision.gameObject.layer == LayerMask.NameToLayer("SnakeBody"))
         {
             Time.timeScale = 0f;
@@ -171,5 +184,25 @@ public class HeadMovement : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.3f);
             sr.color = orig;
         }
+    }
+
+    private void SpawnNewFood()
+    {
+        float x = Mathf.Round(Random.Range(-5f, 5f));
+        float y = Mathf.Round(Random.Range(-5f, 5f));
+        Instantiate(foodPrefab, new Vector3(0.5f+x, 0.5f+y, 0f), Quaternion.identity);
+    }
+
+    private void AddBodySegment()
+    {
+        tailFreezer = true;
+        Vector3 newPos = bodySegments.Count > 0
+            ? bodySegments[bodySegments.Count - 1].position
+            : rb.position;
+
+        GameObject seg = Instantiate(bodySegmentPrefab, newPos, Quaternion.identity);
+        Debug.Log(bodySegments[bodySegments.Count-1].GetComponent<SpriteRenderer>().sprite.name);
+        bodySegments.Add(seg.transform);
+        seg.GetComponent<SpriteRenderer>().enabled = false;
     }
 }

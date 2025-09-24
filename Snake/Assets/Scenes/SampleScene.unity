@@ -182,6 +182,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2004562629238892251, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
+      propertyPath: foodPrefab
+      value: 
+      objectReference: {fileID: 4467516170642154691, guid: de9074316bdb7d043b93fd9e0acff602, type: 3}
+    - target: {fileID: 2004562629238892251, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
       propertyPath: stepLength
       value: 1
       objectReference: {fileID: 0}
@@ -189,6 +193,10 @@ PrefabInstance:
       propertyPath: tailMovement
       value: 
       objectReference: {fileID: 1135437157}
+    - target: {fileID: 2004562629238892251, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
+      propertyPath: bodySegmentPrefab
+      value: 
+      objectReference: {fileID: 2592587539500034382, guid: ef1606ae16ab11d4eb4d86de5c82ffdf, type: 3}
     - target: {fileID: 2004562629238892251, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
       propertyPath: groundMask.m_Bits
       value: 64
@@ -258,6 +266,10 @@ PrefabInstance:
       value: Snake_Head
       objectReference: {fileID: 0}
     - target: {fileID: 4812602944766427009, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812602944766427009, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
       propertyPath: m_IncludeLayers.m_Bits
       value: 128
       objectReference: {fileID: 0}
@@ -288,6 +300,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3610904475017712484, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1740473944}
+    - targetCorrespondingSourceObject: {fileID: 639719544921985440, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1531448354}
   m_SourcePrefab: {fileID: 100100000, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
 --- !u!1001 &395402315
 PrefabInstance:
@@ -3772,6 +3787,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0ad37d0ea1cd5343897b6de4590fd4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1531448350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 639719544921985440, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
+  m_PrefabInstance: {fileID: 179575925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1531448354
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531448350}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1740473936 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3610904475017712484, guid: d429e5a5ac046a54aa08d6cdf9fe6a1c, type: 3}
