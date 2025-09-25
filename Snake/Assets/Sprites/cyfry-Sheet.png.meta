@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: df14bf99c4d7d4140a1b5e4969c3b847
+guid: 33dbc0d9cfbdf5a4981979ad97a26068
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4854673833212271821
-    second: cyfry_0
+      213: -3035618979647597229
+    second: cyfry-Sheet_0
   - first:
-      213: 6738145647417934736
-    second: cyfry_1
+      213: -8213112058190122594
+    second: cyfry-Sheet_1
   - first:
-      213: -3551881421059105915
-    second: cyfry_2
+      213: -5075944914910838662
+    second: cyfry-Sheet_2
   - first:
-      213: 4578404351088583795
-    second: cyfry_3
+      213: -3644861329652266808
+    second: cyfry-Sheet_3
   - first:
-      213: 4604467586566691146
-    second: cyfry_4
+      213: -8720293920437801688
+    second: cyfry-Sheet_4
   - first:
-      213: -2397407811951333832
-    second: cyfry_5
+      213: -7072984933622958120
+    second: cyfry-Sheet_5
   - first:
-      213: -6742950649436774104
-    second: cyfry_6
+      213: -2802833508912211083
+    second: cyfry-Sheet_6
   - first:
-      213: 957872367016645330
-    second: cyfry_7
+      213: -5619226182071919805
+    second: cyfry-Sheet_7
   - first:
-      213: -8866349083465697897
-    second: cyfry_8
+      213: 1164235634086165499
+    second: cyfry-Sheet_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cyfry_0
+      name: cyfry-Sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 10
-        height: 10
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 333affeaedbb0acb0800000000000000
-      internalID: -4854673833212271821
+      spriteID: 355dba41f905fd5d0800000000000000
+      internalID: -3035618979647597229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_1
+      name: cyfry-Sheet_1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 4
-        width: 7
-        height: 10
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 093c03f14c3b28d50800000000000000
-      internalID: 6738145647417934736
+      spriteID: e91b917191a250e80800000000000000
+      internalID: -8213112058190122594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_2
+      name: cyfry-Sheet_2
       rect:
         serializedVersion: 2
-        x: 19
-        y: 4
-        width: 7
-        height: 10
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58b567d8aae25bec0800000000000000
-      internalID: -3551881421059105915
+      spriteID: a700a4f4efe9e89b0800000000000000
+      internalID: -5075944914910838662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_3
+      name: cyfry-Sheet_3
       rect:
         serializedVersion: 2
-        x: 25
-        y: 4
-        width: 7
-        height: 10
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 374ecb8ff72c98f30800000000000000
-      internalID: 4578404351088583795
+      spriteID: 8c8c4869ee9da6dc0800000000000000
+      internalID: -3644861329652266808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_4
+      name: cyfry-Sheet_4
       rect:
         serializedVersion: 2
-        x: 31
-        y: 4
-        width: 7
-        height: 10
+        x: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a499b1ddfda56ef30800000000000000
-      internalID: 4604467586566691146
+      spriteID: 82d6e47a1ea4bf680800000000000000
+      internalID: -8720293920437801688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_5
+      name: cyfry-Sheet_5
       rect:
         serializedVersion: 2
-        x: 37
-        y: 4
-        width: 7
-        height: 10
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83ee4ea0c42babed0800000000000000
-      internalID: -2397407811951333832
+      spriteID: 8d7b6b95da5b7dd90800000000000000
+      internalID: -7072984933622958120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_6
+      name: cyfry-Sheet_6
       rect:
         serializedVersion: 2
-        x: 43
-        y: 4
-        width: 8
-        height: 10
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 821e45a2c1a3c62a0800000000000000
-      internalID: -6742950649436774104
+      spriteID: 57bd9b016c55a19d0800000000000000
+      internalID: -2802833508912211083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_7
+      name: cyfry-Sheet_7
       rect:
         serializedVersion: 2
-        x: 50
-        y: 4
-        width: 7
-        height: 10
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d29030c7db0b4d00800000000000000
-      internalID: 957872367016645330
+      spriteID: 34b57013f8f7402b0800000000000000
+      internalID: -5619226182071919805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyfry_8
+      name: cyfry-Sheet_8
       rect:
         serializedVersion: 2
-        x: 56
-        y: 4
-        width: 7
-        height: 10
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,8 +328,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 795ba690c7664f480800000000000000
-      internalID: -8866349083465697897
+      spriteID: bfbbe8c0422382010800000000000000
+      internalID: 1164235634086165499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyfry-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689e2edaedd0b7e4483eca55aa53cfb0
+      internalID: 1425951562
       vertices: []
       indices: 
       edges: []
@@ -338,7 +360,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bbae188c17958e844bb370d0d21c2c45
     internalID: 0
     vertices: []
     indices: 
@@ -346,17 +368,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      cyfry_0: -4854673833212271821
-      cyfry_1: 6738145647417934736
-      cyfry_2: -3551881421059105915
-      cyfry_3: 4578404351088583795
-      cyfry_4: 4604467586566691146
-      cyfry_5: -2397407811951333832
-      cyfry_6: -6742950649436774104
-      cyfry_7: 957872367016645330
-      cyfry_8: -8866349083465697897
+      cyfry-Sheet_0: -3035618979647597229
+      cyfry-Sheet_1: -8213112058190122594
+      cyfry-Sheet_2: -5075944914910838662
+      cyfry-Sheet_3: -3644861329652266808
+      cyfry-Sheet_4: -8720293920437801688
+      cyfry-Sheet_5: -7072984933622958120
+      cyfry-Sheet_6: -2802833508912211083
+      cyfry-Sheet_7: -5619226182071919805
+      cyfry-Sheet_8: 1164235634086165499
+      cyfry-Sheet_9: 1425951562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

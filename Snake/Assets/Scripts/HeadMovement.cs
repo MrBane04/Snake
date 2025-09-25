@@ -28,6 +28,10 @@ public class HeadMovement : MonoBehaviour
     private int frameIndex = 0;
     private float animationTimer = 0f;
 
+    //Do liczenia punktow
+    public int score = 0;
+    public ScoreUI scoreUI;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -165,6 +169,10 @@ public class HeadMovement : MonoBehaviour
             Destroy(collision.gameObject);
             SpawnNewFood();
             AddBodySegment();
+
+            score += 100;
+            if (score > 1000000) score = 999999;
+            scoreUI.UpdateScore(score);
         }
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("SnakeBody"))
