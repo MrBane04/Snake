@@ -12,11 +12,12 @@ public class HeadMovement : MonoBehaviour
     public GameObject bodySegmentPrefab;
     private bool tailFreezer=false;
     public GameObject tail;
+    public FoodSpawner foodSpawner;  // spawner owockow
 
     public SpriteRenderer headRenderer;
     public Sprite[] headFrames;
     public float headFPS = 8f;
-
+        
     public List<Transform> bodySegments = new List<Transform>();
     public TailMovement tailMovement;
 
@@ -196,9 +197,7 @@ public class HeadMovement : MonoBehaviour
 
     private void SpawnNewFood()
     {
-        float x = Mathf.Round(Random.Range(-5f, 5f));
-        float y = Mathf.Round(Random.Range(-5f, 5f));
-        Instantiate(foodPrefab, new Vector3(0.5f+x, 0.5f+y, 0f), Quaternion.identity);
+        foodSpawner.SpawnFood(); 
     }
 
     private void AddBodySegment()

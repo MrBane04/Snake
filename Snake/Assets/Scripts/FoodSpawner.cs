@@ -4,16 +4,16 @@ using UnityEngine.Tilemaps;
 
 public class FoodSpawner : MonoBehaviour
 {
-    public Tilemap groundTilemap;      // tilemapa z polami, na których mog¹ pojawiæ siê owoce
-    public Tilemap obstacleTilemap;    // tilemapa z przeszkodami (opcjonalnie)
-    public GameObject foodPrefab;      // prefab owoca
-    public Transform foodParent;       // opcjonalnie - parent dla wszystkich owoców
+    public Tilemap groundTilemap;
+    public Tilemap obstacleTilemap;
+    public GameObject foodPrefab;
+    public Transform foodParent;
+    public HeadMovement snakeHead; // dodaj referencjê do skryptu od wê¿a
 
     private List<Vector3Int> groundCells = new List<Vector3Int>();
 
     void Start()
     {
-        // zbierz wszystkie pola z groundTilemap
         var bounds = groundTilemap.cellBounds;
         for (int x = bounds.xMin; x < bounds.xMax; x++)
         {
@@ -25,13 +25,11 @@ public class FoodSpawner : MonoBehaviour
             }
         }
 
-        // spawn 1 owoca na start
         SpawnFood();
     }
 
     public void SpawnFood()
     {
-        // lista wolnych pól (na razie tylko eliminujemy przeszkody)
         List<Vector3Int> freeCells = new List<Vector3Int>();
 
         foreach (var cell in groundCells)
@@ -39,8 +37,25 @@ public class FoodSpawner : MonoBehaviour
             if (obstacleTilemap != null && obstacleTilemap.HasTile(cell))
                 continue;
 
-            freeCells.Add(cell);
+            bool occupied = false;
+            if (snakeHead != null)
+            {
+                
+                Vector3Int headCell = groundTilemap.WorldToCell(snakeHead.transform.position);
+                if (headCell == cell) { occupied = true; }
+
+                
+                foreach (Transform seg in snakeHead.bodySegments)
+                {
+                    Vector3Int segCell = groundTilemap.WorldToCell(seg.position);
+                    if (segCell == cell) { occupied = true; break; }
+                }
+            }
+
+            if (!occupied)
+                freeCells.Add(cell);
         }
+
 
         if (freeCells.Count == 0)
         {
@@ -49,8 +64,7 @@ public class FoodSpawner : MonoBehaviour
         }
 
         Vector3Int chosen = freeCells[Random.Range(0, freeCells.Count)];
-        Vector3 worldPos = groundTilemap.GetCellCenterWorld(chosen);
-
-        Instantiate(foodPrefab, worldPos, Quaternion.identity, foodParent);
+        Vector3 pos = groundTilemap.GetCellCenterWorld(chosen);
+        Instantiate(foodPrefab, pos, Quaternion.identity, foodParent);
     }
 }
