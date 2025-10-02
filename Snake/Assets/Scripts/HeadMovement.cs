@@ -25,9 +25,10 @@ public class HeadMovement : MonoBehaviour
     private Vector2 direction = Vector2.right;
     private Vector2 pendingDir = Vector2.zero;
     private float timer;
-
+    private Vector2 headNew;
     private int frameIndex = 0;
     private float animationTimer = 0f;
+    
 
     //Do liczenia punktow
     public int score = 0;
@@ -38,7 +39,22 @@ public class HeadMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         if (!headRenderer) headRenderer = GetComponentInChildren<SpriteRenderer>();
     }
+    private bool CheckSelfCollision(Vector2 headNew)
+    {
+        float tol = 0.1f * stepLength;
+        for (int i = 0; i < bodySegments.Count; i++)
+        {
+            if (Vector2.Distance((Vector2)bodySegments[i].position, headNew) <= tol)
+                return true;
+        }
+        if (tailMovement != null)
+        {
+            if (Vector2.Distance((Vector2)tailMovement.transform.position, headNew) <= tol)
+                return true;
+        }
 
+        return false;
+    }
     private void Start()
     {
         RotateHead();
@@ -88,11 +104,11 @@ public class HeadMovement : MonoBehaviour
             desiredDelta = desiredDelta.normalized * allowed;
         }
 
-        Vector2 headNew = headOld + desiredDelta;
+        headNew = headOld + desiredDelta;
 
         Vector3 prevPos = headOld;
         Vector2 lastMoveDir = direction;
-
+        
         for (int i = 0; i < bodySegments.Count; i++)
         {
             Transform seg = bodySegments[i];
@@ -100,7 +116,7 @@ public class HeadMovement : MonoBehaviour
             Vector3 segNew = prevPos;
             seg.position = segNew;
 
-            Vector2 inDir  = CardinalFromDelta(segNew - segOld);
+            Vector2 inDir = CardinalFromDelta(segNew - segOld);
             Vector2 outDir = CardinalFromDelta(((i == 0) ? (Vector3)headNew : bodySegments[i - 1].position) - segNew);
 
             var anim = seg.GetComponentInChildren<BodySegmentMovement>();
@@ -111,6 +127,7 @@ public class HeadMovement : MonoBehaviour
 
             prevPos = segOld;
         }
+        
 
         if (tailMovement) // && tailFreezer==false
         {
@@ -119,9 +136,18 @@ public class HeadMovement : MonoBehaviour
             Vector2 tailDir = (bodySegments.Count > 0) ? lastMoveDir : direction;
             tailMovement.SetDirection(tailDir);
         }
-
-        if(tailFreezer==false)bodySegments[bodySegments.Count-1].GetComponent<SpriteRenderer>().enabled = true;
+        for(int i =0;i<bodySegments.Count;i++)
+        {
+            if(i==bodySegments.Count-1 && tailFreezer==true)continue;
+            bodySegments[i].GetComponent<SpriteRenderer>().enabled = true;
+        } 
         tailFreezer=false;
+        if (CheckSelfCollision(headNew))
+        {
+            Time.timeScale = 0f;
+            StartCoroutine(HitEffect());
+            return;
+        }
         rb.MovePosition(headNew);
         AnimateHeadLoop();
     }
@@ -159,7 +185,10 @@ public class HeadMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Walls") && (pendingDir == Vector2.zero))
+
+        Vector2 pos = collision.transform.position;
+        float tol = 0.2f * stepLength;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Walls") && Vector2.Distance(pos, headNew) <= tol)
         {
             Time.timeScale = 0f;
             StartCoroutine(HitEffect());
@@ -185,6 +214,7 @@ public class HeadMovement : MonoBehaviour
 
     IEnumerator HitEffect()
     {
+        bodySegments[0].GetComponent<SpriteRenderer>().enabled = false;
         SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
         if (sr)
         {

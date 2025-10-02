@@ -31,7 +31,6 @@ public class FoodSpawner : MonoBehaviour
     public void SpawnFood()
     {
         List<Vector3Int> freeCells = new List<Vector3Int>();
-
         foreach (var cell in groundCells)
         {
             if (obstacleTilemap != null && obstacleTilemap.HasTile(cell))
